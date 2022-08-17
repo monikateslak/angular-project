@@ -20,6 +20,11 @@ import { MatListModule } from '@angular/material/list';
 import { ComponentDashboardComponent } from './component-dashboard/component-dashboard.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
+import { ComponentTableComponent } from './component-table/component-table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { ComponentMaterialDesignCardsComponent } from './component-material-design-cards/component-material-design-cards.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,9 @@ import { MatMenuModule } from '@angular/material/menu';
     PhotosComponent,
     AddressFormComponent,
     ComponentNavigationComponent,
-    ComponentDashboardComponent
+    ComponentDashboardComponent,
+    ComponentTableComponent,
+    ComponentMaterialDesignCardsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +51,10 @@ import { MatMenuModule } from '@angular/material/menu';
     MatIconModule,
     MatListModule,
     MatGridListModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
